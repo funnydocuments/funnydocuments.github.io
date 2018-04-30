@@ -31,7 +31,7 @@ body{
     -webkit-transition: .2s;
 }
 
-.list-modules ul li:hover .des-tooltip{
+.list-modules ul li.show .des-tooltip{
     opacity: 1;
     visibility: visible;
 }

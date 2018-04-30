@@ -1,3 +1,11 @@
+body{
+    font-size: 14px;
+}
+
 .content-documents{
     padding: 50px 0;
+}
+
+.logo{
+    font-size: 22px;
 }

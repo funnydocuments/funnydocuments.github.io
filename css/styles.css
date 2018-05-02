@@ -56,8 +56,15 @@ body{
     display: block;
 }
 
+.list-modules > ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 .list-modules > ul > li{
-    margin-bottom: 5px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
 }
 
 .heading-top-description{

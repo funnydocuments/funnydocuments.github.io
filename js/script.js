@@ -1,11 +1,7 @@
 $(document).ready(function() {
     $(".list-modules > ul > li").mouseover(function() {
-        /*$(".list-modules > ul > li").removeClass("show");
-        $(this).addClass("show");*/
-
-        $(".des-md").removeClass("show");
-        var des = $(this).attr("data-description");
-        $("#" + $des).addClass("show");
-
+        $(".description-modules .des-md").removeClass("show");
+        var des_module = $(this).attr("data-description");
+        $("#" + des_module).addClass("show");
     });
 });

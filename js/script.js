@@ -5,4 +5,6 @@ $(document).ready(function() {
         console.log(des_module);
         $("#" + des_module).addClass("show");
     });
+
+    $("#left-container, #right-container").stick_in_parent();
 });

@@ -16,12 +16,7 @@ body{
     position: relative;
 }
 
-.list-modules > ul > li > .des-tooltip{
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    right: 0;
-    top: 0;
+.list-modules > ul > li > .des-md{
     padding: 20px;
     max-width: 470px;
     background-color: #f5f5f5;
@@ -33,9 +28,4 @@ body{
 
 .list-modules > ul > li{
     margin-bottom: 5px;
-}
-
-.list-modules > ul > li.show > .des-tooltip{
-    opacity: 1;
-    visibility: visible;
 }

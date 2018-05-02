@@ -4,6 +4,4 @@ $(document).ready(function() {
         var des_module = $(this).attr("data-description");
         $("#" + des_module).addClass("show");
     });
-
-    $("#left-container, #left-container").stick_in_parent();
 });

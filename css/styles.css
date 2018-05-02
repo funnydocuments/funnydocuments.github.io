@@ -2,7 +2,8 @@ body{
     font-size: 14px;
 }
 
-.content-documents{
+.content-documents .left-container,
+.content-documents .right-container{
     padding: 50px 0;
 }
 

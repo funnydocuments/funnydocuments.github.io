@@ -10,7 +10,7 @@ $(document).ready(function() {
         var des_module = $(this).attr("data-description");
         console.log(des_module);
         $("#" + des_module).addClass("show");
-        stickyBlock();
+        //stickyBlock();
     });
 
 

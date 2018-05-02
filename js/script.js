@@ -4,7 +4,8 @@ $(document).ready(function() {
         $(this).addClass("show");*/
 
         $(".des-md").removeClass("show");
-        $("#" + this.attr("data-description")).addClass("show");
+        var des = $(this).attr("data-description");
+        $("#" + $des).addClass("show");
 
     });
 });

@@ -11,6 +11,18 @@ body{
     font-weight: 700;
 }
 
+.left-container{
+    float: left;
+    padding: 0 15px;
+    width: 41.666667%;
+}
+
+.right-container{
+    float: left;
+    padding: 0 15px;
+    width: 58.333333%;
+}
+
 .description-modules .des-md{
     display: none;
     padding: 20px;

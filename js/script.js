@@ -6,5 +6,5 @@ $(document).ready(function() {
         $("#" + des_module).addClass("show");
     });
 
-    $("#left-container, #right-container").stick_in_parent();
+    $("#left-container").stick_in_parent();
 });

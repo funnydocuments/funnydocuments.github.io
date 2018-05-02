@@ -63,8 +63,12 @@ body{
 }
 
 .list-modules > ul > li{
-    padding: 10px 0;
     border-bottom: 1px solid #ddd;
+}
+
+.list-modules > ul > li > a{
+    display: block;
+    padding: 10px 0;
 }
 
 .heading-top-description{

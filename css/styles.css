@@ -29,3 +29,16 @@ body{
 .list-modules > ul > li{
     margin-bottom: 5px;
 }
+
+.heading-top-description a {
+    float: right;
+    margin-left: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.heading-top-description b{
+    display: inline-block;
+    margin: 10px 0 20px 0;
+}

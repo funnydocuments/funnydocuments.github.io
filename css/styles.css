@@ -2,6 +2,12 @@ body {
     font-size: 14px;
 }
 
+.copyright{
+    font-size: 12px;
+    padding-top: 30px;
+    color: #666;
+}
+
 .content-documents .left-container,
 .content-documents .right-container {
     height: 100%;

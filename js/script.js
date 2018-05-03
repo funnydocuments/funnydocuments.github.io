@@ -1,5 +1,8 @@
 $(document).ready(function() {
     $(".list-modules > ul > li").mouseover(function() {
+        $(".list-modules > ul > li").removeClass("active");
+        $(this).addClass("active");
+
         $(".description-modules .des-md").removeClass("show");
         var des_module = $(this).attr("data-description");
         $("#" + des_module).addClass("show");

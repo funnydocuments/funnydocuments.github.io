@@ -75,6 +75,11 @@ body {
 .list-modules > ul > li > h2 > a {
     display: block;
     padding: 10px 0;
+    text-decoration: none;
+}
+
+.list-modules > ul > li.active > h2 > a{
+    color: #0056b3;
 }
 
 .heading-top-description {

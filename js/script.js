@@ -5,7 +5,7 @@ $(document).ready(function() {
         $("#" + des_module).addClass("show");
 
         $(".heading-top-description > b").text($(this).attr("data-name"));
-        $(".heading-top-description > #btn-detail").text($(this).attr("data-detail"));
-        $(".heading-top-description > #btn-buy").text($(this).attr("data-buy"));
+        $(".heading-top-description > #btn-detail").attr("href", $(this).attr("data-detail"));
+        $(".heading-top-description > #btn-buy").attr("href", $(this).attr("data-buy"));
     });
 });

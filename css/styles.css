@@ -1,3 +1,11 @@
+html,
+body,
+.content-documents,
+.content-documents > container,
+.content-documents > container > .content{
+    height: 100%;
+}
+
 body {
     font-size: 14px;
 }

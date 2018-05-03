@@ -80,6 +80,7 @@ body {
 
 .list-modules > ul > li.active > h2 > a{
     color: #0056b3;
+    font-weight: 700;
 }
 
 .heading-top-description {

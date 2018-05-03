@@ -1,8 +1,8 @@
 html,
 body,
 .content-documents,
-.content-documents > container,
-.content-documents > container > .content{
+.content-documents > .container,
+.content-documents > .container > .content{
     height: 100%;
 }
 

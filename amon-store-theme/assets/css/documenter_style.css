@@ -57,7 +57,7 @@ strong {
     right: 18px;
     left: 218px;
     padding-left: 10px;
-    padding-bottom: 800px;
+    padding-bottom: 200px;
     min-height: 100%;
     height: auto;
     z-index: 1;
@@ -202,6 +202,12 @@ noscript p {
     position: relative;
     height: 900px;
     padding-top: 200px !important;
+}
+
+#documenter_cover h2{
+    font-size: 30px!important;
+    font-weight: 700!important;
+    margin: 0!important;
 }
 
 #documenter_cover p {

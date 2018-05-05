@@ -205,7 +205,11 @@ noscript p {
 }
 
 #documenter_cover p {
-    width: 500px;
+    max-width: 500px;
+}
+
+#bottom-document p{
+    max-width: 1200px;
 }
 
 #documenter_content section {

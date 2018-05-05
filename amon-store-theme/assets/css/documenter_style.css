@@ -424,6 +424,12 @@ hr {
     border-top: 1px solid #444444;
 }
 
+#documenter_sidebar ul ul a:hover,
+#documenter_sidebar ul ul a.current{
+    background-color: #8f8f8f;
+    border-top-color: #8f8f8f;
+}
+
 #documenter_copyright {
     display: block !important;
     visibility: visible !important;

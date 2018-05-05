@@ -69,15 +69,19 @@ strong {
     box-shadow: 0 0 6px rgba(3, 3, 3, 0.6);
     position: fixed;
     left: 0;
+    bottom: 0;
+    top: 0;
     width: 225px;
-    height: 100%;
-    min-height: 100%;
     z-index: 100;
 }
 
-#documenter_sidebar .sidebar-top{
+#documenter_sidebar .sidebar-top {
     padding: 40px 15px 30px;
     text-align: right;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
 }
 
 #documenter_sidebar .sidebar-top h1 {
@@ -87,7 +91,7 @@ strong {
     margin-bottom: 0;
 }
 
-#documenter_sidebar .sidebar-top h5{
+#documenter_sidebar .sidebar-top h5 {
     font-size: 12px;
     text-shadow: 1px 1px 1px #fff;
     -webkit-text-shadow: 1px 1px 1px #fff;
@@ -104,11 +108,11 @@ img {
     max-width: 100%;
 }
 
-.preview-image{
+.preview-image {
     margin-bottom: 30px;
 }
 
-section img{
+section img {
     border: 1px solid #ddd;
     padding: 10px;
     border-radius: 4px;
@@ -152,22 +156,9 @@ noscript p {
 /* Sidebar
 /*----------------------------------------------------------------------*/
 
-#documenter_sidebar #documenter_logo {
-    display: block;
-    height: 20%;
-    max-height: 200px;
-    min-height: 70px;
-    width: 200px;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
 #documenter_sidebar ul {
     font-size: 13px;
     font-weight: 700;
-    min-height: 150px;
-    height: 75%;
-    overflow: auto;
     padding: 0;
 }
 
@@ -217,17 +208,17 @@ noscript p {
     padding-top: 200px !important;
 }
 
-#documenter_cover h2{
-    font-size: 30px!important;
-    font-weight: 700!important;
-    margin: 0!important;
+#documenter_cover h2 {
+    font-size: 30px !important;
+    font-weight: 700 !important;
+    margin: 0 !important;
 }
 
 #documenter_cover p {
     max-width: 500px;
 }
 
-#bottom-document p{
+#bottom-document p {
     max-width: 1200px;
 }
 
@@ -268,7 +259,7 @@ noscript p {
     font-weight: 100;
 }
 
-.configuration-des{
+.configuration-des {
     margin-bottom: 50px;
 }
 
@@ -316,72 +307,6 @@ noscript p {
     white-space: nowrap;
 }
 
-#documenter_content .warning {
-    padding: 10px 10px 10px 30px;
-    border: 1px solid #D5D458;
-    background-color: #F0FEB1;
-    background-image: url(img/warning.png);
-    background-repeat: no-repeat;
-    background-position: 8px 11px;
-}
-
-#documenter_content .info {
-    padding: 10px 10px 10px 30px;
-    border: 1px solid #6AB3FF;
-    background-color: #A3D0FF;
-    background-image: url(img/info.png);
-    background-repeat: no-repeat;
-    background-position: 8px 11px;
-}
-
-#documenter_content div.alert {
-    padding: 8px 35px 8px 14px;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-    background-color: #fcf8e3;
-    border: 1px solid #fbeed5;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-}
-
-#documenter_content div.alert-success, #documenter_content div.alert-success div.alert-heading {
-    color: #468847;
-}
-
-#documenter_content div.alert-danger, #documenter_content div.alert-error {
-    background-color: #f2dede;
-    border-color: #eed3d7;
-}
-
-#documenter_content div.alert-danger,
-#documenter_content div.alert-error,
-#documenter_content div.alert-danger div.alert-heading,
-#documenter_content div.alert-error div.alert-heading {
-    color: #b94a48;
-}
-
-#documenter_content div.alert-info {
-    background-color: #d9edf7;
-    border-color: #bce8f1;
-}
-
-#documenter_content div.alert-info, #documenter_content div.alert-info div.alert-heading {
-    color: #3a87ad;
-}
-
-#documenter_content div.alert-block {
-    padding-top: 14px;
-    padding-bottom: 14px;
-}
-
-#documenter_content div.alert-block > p, #documenter_content div.alert-block > ul {
-    margin-bottom: 0;
-}
-
-#documenter_content div.alert-block p + p {
-    margin-top: 5px;
-}
-
 .documenter_buttons .btn {
     font-size: 13px;
 }
@@ -412,6 +337,15 @@ hr {
     color: #444444;
 }
 
+#documenter_sidebar #documenter_nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 120px;
+    bottom: 50px;
+    overflow-y: auto;
+}
+
 #documenter_sidebar ul a:hover {
     background: #444444;
     color: #DDDDDD;
@@ -425,7 +359,7 @@ hr {
 }
 
 #documenter_sidebar ul ul a:hover,
-#documenter_sidebar ul ul a.current{
+#documenter_sidebar ul ul a.current {
     background-color: #8f8f8f;
     border-top-color: #8f8f8f;
 }
@@ -547,17 +481,5 @@ hr {
 
     #documenter_cover {
         margin-bottom: 300px;
-    }
-
-    #documenter_content .warning {
-        background-image: url(img/warning.png) !important;
-        background-repeat: no-repeat !important;
-        background-position: 8px 11px !important;
-    }
-
-    #documenter_content .info {
-        background-image: url(img/info.png) !important;
-        background-repeat: no-repeat !important;
-        background-position: 8px 11px !important;
     }
 }

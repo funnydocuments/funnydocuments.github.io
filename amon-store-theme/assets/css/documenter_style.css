@@ -70,7 +70,6 @@ strong {
     position: fixed;
     left: 0;
     width: 225px;
-    top: 0!important;
     height: 100%;
     min-height: 100%;
     z-index: 100;

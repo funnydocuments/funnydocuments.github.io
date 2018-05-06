@@ -206,6 +206,12 @@ noscript p {
     margin-bottom: 30px;
 }
 
+.alert-success .fa-lightbulb-o{
+    font-size: 16px;
+    position: relative;
+    top: 1px;
+}
+
 .view-image{
     padding: 10px 0 20px;
 }

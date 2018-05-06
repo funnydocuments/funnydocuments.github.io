@@ -155,5 +155,10 @@ $(document).ready(function() {
 	
     // make code pretty
     window.prettyPrint && prettyPrint();
-	
+
+	// View Image
+
+	$(".view-image .btn-view-image").click(function() {
+       	$(this).parent().parent(".view-image").toggleClass("active");
+    });
 });

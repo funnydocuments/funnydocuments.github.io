@@ -201,6 +201,22 @@ noscript p {
 /*----------------------------------------------------------------------*/
 /* Content
 /*----------------------------------------------------------------------*/
+.col-image,
+.col-info{
+    margin-bottom: 30px;
+}
+
+.view-image{
+    padding: 10px 0 20px;
+}
+
+.view-image img{
+    display: none;
+}
+
+.view-image.active img{
+    display: block;
+}
 
 #documenter_cover {
     position: relative;
@@ -261,12 +277,6 @@ noscript p {
 
 .configuration-des {
     margin-bottom: 50px;
-}
-
-#documenter_content h6 {
-    font-size: 14px;
-    margin: 18px 0;
-    font-weight: 100;
 }
 
 #documenter_content dl {

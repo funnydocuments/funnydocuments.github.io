@@ -123,15 +123,26 @@
 			
 			<section id="manual_install">
 				<h4>Manual Install</h4>
-				<div class="alert alert-danger">
-					<ol style="margin: 0;">
-						<li>We recommend you to duplicate your live store on a staging/test site and try installation on it in advance</li>
-						<li>
-							Backup magento files and the store database.<br>
-							It’s very important to backup all of themes and extensions in Magento before installation, especially when you are working on a live server. We strongly recommend you to do not omit this step.
-						</li>
-					</ol>
-				</div>
+				<p>In this guide, We assume that you already have Magento installed, so to prepare installation, you need to do the following steps:</p>
+
+
+				<ol style="margin: 0;">
+					<li>We recommend you to duplicate your live store on a staging/test site and try installation on it in advance</li>
+					<li>
+						Backup magento files and the store database.<br>
+						It’s very important to backup all of themes and extensions in Magento before installation, especially when you are working on a live server. We strongly recommend you to do not omit this step.
+					</li>
+					<li>Disable all cache on your Magento site include:
+						<ul>
+							<li>Magento Cache (System > Cache Management)</li>
+							<li>Any additional cache on your server, for instance PHP cache engines, APC, ...</li>
+						</ul>
+					</li>
+					<li>Enable Maintenance mode for your store before uploading theme source.</li>
+					<li>Download theme package <b>themefunny-amonstore-themeonly_vX.X.X.zip</b> (zip file), extract this package and upload folders: <code>app</code>, <code>pub</code> to your Magento folder.
+						You can use a FTP software, such as FileZilla, then logging into your hosting</li>
+					<li>Make sure that you upload all theme folders and files successfully</li>
+				</ol>
 
 			</section>
 		</section>

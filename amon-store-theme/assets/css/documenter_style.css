@@ -42,6 +42,10 @@ strong {
     font-weight: 700;
 }
 
+p{
+    margin-bottom: 10px;
+}
+
 #documenter_buttons {
     position: absolute;
     right: 0;
@@ -50,6 +54,39 @@ strong {
 
 .btn {
     font-size: 14px;
+}
+
+.btn:focus{
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.btn-config{
+    width: 100%;
+    text-align: left;
+    padding: 7px 20px;
+    margin-top: 1px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+}
+
+.btn-config span{
+    float: left;
+}
+
+.btn-config i{
+    float: right;
+    line-height: 1.5;
+}
+
+
+
+.collapse-config{
+    background-color: #eee;
+}
+
+.collapse-config-content{
+    padding: 20px;
 }
 
 #documenter_content {
@@ -113,6 +150,7 @@ img {
 }
 
 section img {
+    background-color: #fff;
     border: 1px solid #ddd;
     padding: 10px;
     border-radius: 4px;
@@ -198,12 +236,56 @@ noscript p {
     text-align: right;
 }
 
+#documenter_sidebar ul li ul.horizontal-nav{
+    position: fixed;
+    font-size: 0;
+    display: block!important;
+    top: -50px;
+    left: 225px;
+    right: 0;
+    z-index: 999;
+    background-color: #ddd;
+    text-align: center;
+    box-shadow: 6px 0 6px rgba(3, 3, 3, 0.6);
+    -webkit-box-shadow: 6px 0 6px rgba(3, 3, 3, 0.6);
+    transition: .2s;
+    -webkit-transition: .2s;
+}
+
+#documenter_sidebar ul li ul.horizontal-nav > li{
+    display: inline-block;
+    font-size: 13px;
+}
+
+#documenter_sidebar ul li ul.horizontal-nav > li > a{
+    background: none;
+    border: none;
+    display: block;
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    color: #444;
+    border-right: 1px solid #aaa;
+}
+
+#documenter_sidebar ul li ul.horizontal-nav > li:first-child > a{
+    border-left: 1px solid #aaa;
+}
+
+#documenter_sidebar ul a.current + ul.horizontal-nav{
+    top: 0;
+}
+
 /*----------------------------------------------------------------------*/
 /* Content
 /*----------------------------------------------------------------------*/
 .col-image,
 .col-info{
     margin-bottom: 30px;
+}
+
+.in-scroll{
+    padding-top: 60px;
 }
 
 .alert-success .fa-lightbulb-o{
@@ -260,25 +342,21 @@ noscript p {
 #documenter_content h2 {
     font-size: 20px;
     margin-bottom: 18px;
-    font-weight: 100;
 }
 
 #documenter_content h3 {
     font-size: 26px;
     margin: 18px 0 0;
-    font-weight: 100;
 }
 
 #documenter_content h4 {
     font-size: 20px;
     margin: 18px 0;
-    font-weight: 100;
     padding-top: 40px;
 }
 
 #documenter_content h5 {
     margin: 18px 0;
-    font-weight: 100;
 }
 
 .configuration-des {

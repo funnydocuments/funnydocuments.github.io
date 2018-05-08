@@ -12,8 +12,8 @@ $(document).ready(function() {
 		sections = new Array(),
 		sectionscount = 0,
 		win = $(window),
-		sidebar = $('#documenter_sidebar'),
-		nav = $('#documenter_nav'),
+		sidebar = $('#documenter_sidebar, #horizontal-nav'),
+		nav = $('#documenter_nav, #horizontal-nav'),
 		logo = $('#documenter_logo'),
 		navanchors = nav.find('a'),
 		timeoffset = 50,
@@ -156,6 +156,8 @@ $(document).ready(function() {
     // make code pretty
     window.prettyPrint && prettyPrint();
 
+	// Scroll Nav Top
+    $('.sub-nav').navScroll({});
 	// View Image
 
 	$(".view-image .btn-view-image").click(function() {

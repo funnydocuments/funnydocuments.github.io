@@ -19,7 +19,8 @@
 	
 	<script src="assets/js/jquery.scrollTo.js"></script>
 	<script src="assets/js/jquery.easing.js"></script>
-	
+	<script src="assets/js/bootstrap.min.js"></script>
+
 	<script>document.createElement('section');var duration='500',easing='swing';</script>
 	<script src="assets/js/script.js"></script>
 	
@@ -52,7 +53,15 @@
 			
 			<li><a href="#theme_confuguration" title="Theme Configuration">Theme - Modules Configuration</a>
 				<ul>
-					<li><a href="#design_confuguration">Design Configuration</a></li>
+					<li>
+						<a href="#design_confuguration">Design Configuration</a>
+						<ul id="horizontal-nav" class="scroll-nav horizontal-nav">
+							<li><a href="#design-general">General</a></li>
+							<li><a href="#design-fonts">Fonts</a></li>
+							<li><a href="#design-header">Header</a></li>
+							<li><a href="#design-products">Products</a></li>
+						</ul>
+					</li>
 					<li><a href="#layout_confuguration">Layout Configuration</a></li>
 					<li><a href="#quick_view_confuguration">Quick View Configuration</a></li>
 				</ul>
@@ -186,7 +195,7 @@
 						<img src="assets/images/design/design-configuration.png" alt="Design Configuration" />
 					</div>
 
-					<div class="row">
+					<div id="design-general" class="row in-scroll">
 						<div class="col-lg-6 col-md-6 col-image">
 							<img src="assets/images/design/design-general.png" alt="Design General" />
 						</div>
@@ -207,7 +216,7 @@
 						</div>
 					</div>
 
-					<div id="fonts" class="row">
+					<div id="design-fonts" class="row in-scroll">
 						<div class="col-lg-6 col-md-6 col-image">
 							<img src="assets/images/design/design-font.png" alt="Design Font" />
 						</div>
@@ -248,7 +257,7 @@
 						</div>
 					</div>
 
-					<div class="row">
+					<div id="design-header" class="row in-scroll">
 						<div class="col-lg-6 col-md-6 col-image">
 							<img src="assets/images/design/header.png" alt="Header" />
 						</div>
@@ -269,6 +278,89 @@
 							</div>
 						</div>
 					</div>
+
+					<div id="design-products" class="row in-scroll">
+						<div class="col-lg-6 col-md-6 col-image">
+							<img src="assets/images/design/design-product.png" alt="Product Configuration" />
+						</div>
+
+						<div class="col-lg-6 col-md-6 col-info">
+							<h5>Products</h5>
+							<p>Cung cấp cho bạn các cấu hình cho hình dáng sản phẩm như background, button add to cart, compare, wish list, product image, product label...</p>
+
+							<button class="btn btn-secondary btn-config" type="button" data-toggle="collapse" data-target="#product-general">
+								<span>General</span>
+								<i class="fa fa-arrows-v"></i>
+							</button>
+							<div class="collapse collapse-config" id="product-general">
+								<div class="collapse-config-content">
+									<p><strong>Background Color</strong>: Mầu nền của sản phẩm</p>
+									<p><strong>Background Hover Color</strong>: Mầu nền khi trỏ chuột vào sản phẩm</p>
+									<p><strong>Border Color</strong>: Mầu border của sản phẩm</p>
+									<p><strong>Border Hover Color</strong>: Mầu border khi hover vào sản phẩm</p>
+								</div>
+							</div>
+
+							<button class="btn btn-secondary btn-config" type="button" data-toggle="collapse" data-target="#product-product-image">
+								<span>Product Image</span>
+								<i class="fa fa-arrows-v"></i>
+							</button>
+							<div class="collapse collapse-config" id="product-product-image">
+								<div class="collapse-config-content">
+									<p><strong>Image Size</strong>: 1:1: display square image with image size of 600x600. 3:4: display standing rectangle image with image size of 600x800. 4:3: display lying rectangle image with image size of 800x600. Be declared in file: <code>app/design/frontend/ThemeFunny/Amonstore/etc/view.xml</code>. </p>
+									<p><strong>Placeholder Image Size x:x</strong>: Khi Enable Lazy Loading(Advanced - Optimize - Enable Lazy Loading) thì ảnh này sẽ được hiển thị trước khi ảnh sản phẩm được load. Mặc định ảnh này được lấy trong thư mục <code>pub/media/placeholder/pl</code></p>
+									<div class="alert alert-success">
+										<i class="fa fa-lightbulb-o"></i> <strong>Tip</strong>: Bạn nên chọn ảnh placeholder có kích thước tỉ lệ với ảnh sản phẩm.
+									</div>
+									<div class="view-image">
+										<p><a class="btn btn-danger btn-view-image" href="javascript:void(0);">View Image</a></p>
+										<img src="assets/images/design/placehoder-product.png" alt="Placehoder Product Image" />
+									</div>
+								</div>
+							</div>
+
+							<button class="btn btn-secondary btn-config" type="button" data-toggle="collapse" data-target="#product-name">
+								<span>Name</span>
+								<i class="fa fa-arrows-v"></i>
+							</button>
+							<div class="collapse collapse-config" id="product-name">
+								<div class="collapse-config-content">
+									<p><strong>Display Name Product</strong>: Hiển thị hoặc không hiển thị tên sản phẩm</p>
+									<p><strong>Name Product Color</strong>: Mầu của tên sản phẩm</p>
+									<p><strong>Name Product Hover Color</strong>: Mầu khi hover vào tên sản phẩm</p>
+								</div>
+							</div>
+
+							<button class="btn btn-secondary btn-config" type="button" data-toggle="collapse" data-target="#product-price">
+								<span>Price</span>
+								<i class="fa fa-arrows-v"></i>
+							</button>
+							<div class="collapse collapse-config" id="product-price">
+								<div class="collapse-config-content">
+									<p><strong>Display Price Product</strong>: Hiển thị hoặc không hiển thị giá của sản phẩm</p>
+									<p><strong>Default Price Color</strong>: Mầu mặc định của price</p>
+									<p><strong>Special Price Color</strong>: Mầu của special price</p>
+									<p><strong>Old Price Color</strong>: Mầu của old price</p>
+								</div>
+							</div>
+
+							<button class="btn btn-secondary btn-config" type="button" data-toggle="collapse" data-target="#product-rating">
+								<span>Rating</span>
+								<i class="fa fa-arrows-v"></i>
+							</button>
+							<div class="collapse collapse-config" id="product-price">
+								<div class="collapse-config-content">
+									<p><strong>Display Rating Product</strong>: Hiển thị hoặc không hiển thị rating của sản phẩm</p>
+									<p><strong>Rating Link Color</strong>: Mầu link rating</p>
+									<p><strong>Rating Link Hover Color</strong>: Mầu khi hover vào link rating</p>
+									<p><strong>Rating Icon Color</strong>: Mầu của icon rating</p>
+									<p><strong>Rating Icon Result Color</strong>: Mầu kết quả của rating</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
 				</div>
 			</section>
 			

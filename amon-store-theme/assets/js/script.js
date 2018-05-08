@@ -156,8 +156,6 @@ $(document).ready(function() {
     // make code pretty
     window.prettyPrint && prettyPrint();
 
-	// Scroll Nav Top
-    $('.sub-nav').navScroll({});
 	// View Image
 
 	$(".view-image .btn-view-image").click(function() {

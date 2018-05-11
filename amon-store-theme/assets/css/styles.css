@@ -125,6 +125,10 @@ code {
 	font-family: Monaco,Menlo,Consolas,"Courier New",monospace;
 }
 
+.bottom-blank{
+	height: 800px;
+}
+
 .fixed-header{
 	background-color: #0747a6;
 	border-bottom: 1px solid #2e3d54;

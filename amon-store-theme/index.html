@@ -173,7 +173,7 @@
 					</div>
 
 					<div class="col-lg-6 col-md-6 col-info">
-						<h5>Main Font</h5>
+						<h5 class="heading-ignore">Main Font</h5>
 						<p><strong>Font Family</strong>: Font chữ cho website. Hỗ trợ các font cơ bản và google font</p>
 						<p><strong>Google Font Link</strong>: Liên kết tới Google Font</p>
 						<p><strong>Google Font Family</strong>: Tên Google Font bạn muốn sử dụng</p>
@@ -198,7 +198,7 @@
 
 						<p><strong>Google Font Weight</strong>: Nhập: 400(Regular). Những text in đậm sẽ tự nhận Font Weight: 700(Bold)</p>
 
-						<h5>Elements Google Font</h5>
+						<h5 class="heading-ignore">Elements Google Font</h5>
 						<p>Mục này để hiển thị google font cho một thành phần xác định được định danh thông qua class hoặc ID. Cách nhập google font giống phần Main Font.</p>
 						<p><strong>Google Font Elements</strong>: Nhập class hoặc ID của các element bạn muốn hiện thị Google Font</p>
 						<div class="alert alert-success">
@@ -214,11 +214,11 @@
 					</div>
 
 					<div class="col-lg-6 col-md-6 col-info">
-						<h5>General</h5>
+						<h5 class="heading-ignore">General</h5>
 						<p><strong>Display Home Item</strong>: Hiển thị item <code>Home</code> ở navigation</p>
 						<p><strong>Enable Sticky Menu</strong>: Enable/Disable sticky Menu. Navigation luôn hiển thị khi trang web scroll</p>
 
-						<h5>Mobile</h5>
+						<h5 class="heading-ignore">Mobile</h5>
 						<p><strong>Breakpoints</strong>: Khoảng màn hình để chuyển về giao diện header mobile</p>
 						<p><strong>Mobile Logo</strong>: Click Button để nhập logo cho header mobile</p>
 						<p><strong>Display Custom Block</strong>: Hiển thị custom block cho header mobile. Bạn có thể đưa dữa liệu ở header ở bản desktop vào block này. Ví dụ như thông tin về support, hotline, services...</p>
@@ -352,6 +352,7 @@
 			</div>
 		</div>
 
+		<div class="bottom-blank"></div>
 
 		<script src="assets/js/jquery-1.9.0.min.js"></script>
 	  	<script src="assets/js/popper.min.js"></script>
@@ -365,11 +366,13 @@
 		<script>
 			$(function() {
 				var toc = $("#toc").tocify({
-				  selectors: "h2,h3,h4,h5,h6",
+				  	selectors: "h2,h3,h4,h5,h6",
+                    ignoreSelector: ".heading-ignore",
                     scrollHistory: true,
                     scrollTo: 40,
                     hashGenerator: "pretty",
-                    highlightDefault: true
+                    highlightDefault: true,
+                    extendPage: false
 				}).data("toc-tocify");
 
 				prettyPrint();
@@ -377,6 +380,5 @@
 
 			});
 		</script>
-
 	</body>
 </html>

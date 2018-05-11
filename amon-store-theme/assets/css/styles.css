@@ -135,7 +135,7 @@ code {
 .fixed-header h1{
 	float: left;
 	font-size: 20px;
-	margin: 0;
+	margin: 0 1px 0 0;
 	color: #fff;
 	text-transform: uppercase;
 }
@@ -150,6 +150,7 @@ code {
 
 .fixed-header .item-nav{
 	float: left;
+	margin-right: 1px;
 }
 
 .fixed-header .item-nav .btn-dropdown{

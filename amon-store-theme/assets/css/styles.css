@@ -81,6 +81,19 @@ img{
 	background-color: #eee;
 }
 
+.button-right{
+	float: right;
+	margin-right: 20px;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding: 6px 0;
+}
+
+.button-right .btn{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
 .alert-success{
 	padding-left: 45px;
 	min-height: 55px;

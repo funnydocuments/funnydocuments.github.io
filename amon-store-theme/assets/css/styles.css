@@ -127,6 +127,17 @@ img{
 	font-weight: 700;
 }
 
+.tocify > .tocify-header:last-child{
+	margin-bottom: 50px;
+}
+
+.copyright{
+	position: fixed;
+	bottom: 0;
+	font-size: 12px;
+	padding: 0 0 0 15px;
+}
+
 code {
 	background-color: #eee;
 	border-radius: 4px;

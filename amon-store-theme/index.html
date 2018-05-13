@@ -352,13 +352,85 @@
 						<div class="collapse collapse-config" id="product-newlabel">
 							<div class="collapse-config-content">
 								<p><strong>New Label</strong> sẽ được hiển thị khi sản phẩm được set giá trị cho <code>New From Date</code>, <code>New To Date</code></p>
-								<p><strong>Display New Label</strong>: Hiển thị hoặc không hiển thị New label</p>
+								<p><strong>Display New Label</strong>: Hiển thị hoặc không hiển thị New Label</p>
 								<p><strong>Background Color</strong>: Mầu background của New label</p>
 								<p><strong>Text Color</strong>: Mầu chữ của New label</p>
 								<p><strong>Label Text</strong>: Label Text</p>
 							</div>
 						</div>
 
+						<button class="btn btn-secondary btn-config" type="button" data-toggle="collapse" data-target="#product-salelabel">
+							<span>Sale Label</span>
+							<i class="fa fa-arrows-v"></i>
+						</button>
+						<div class="collapse collapse-config" id="product-salelabel">
+							<div class="collapse-config-content">
+								<p><strong>Sale Label</strong> sẽ được hiển thị khi sản phẩm được set giá trị cho<code>Special Price</code>, <code>Special Price From</code>, <code>Special Price To</code></p>
+								<p><strong>Display Sale Label</strong>: Hiển thị hoặc không hiển thị Sale Label</p>
+								<p><strong>Background Color</strong>: Mầu background của Sale label</p>
+								<p><strong>Text Color</strong>: Mầu chữ của Sale label</p>
+								<p><strong>Label Text</strong>: Label Text</p>
+								<p><strong>Show Discount Percent</strong>: Hiển thị số % giảm giá hay không. Nếu Show Discount Percent: Yes thì Label Text sẽ không được hiển thị.</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<h4>Product Page</h4>
+				<div id="design-fonts" class="row in-scroll">
+					<div class="col-lg-6 col-md-6 col-image">
+						<img src="assets/images/design/product-page.png" alt="Product Page Configuration" />
+					</div>
+
+					<div class="col-lg-6 col-md-6 col-info">
+						<button class="btn btn-secondary btn-config" type="button" data-toggle="collapse" data-target="#product-page-imagebox">
+							<span>Image Box</span>
+							<i class="fa fa-arrows-v"></i>
+						</button>
+						<div class="collapse collapse-config" id="product-page-imagebox">
+							<div class="collapse-config-content">
+								<p><strong>Enable Zoom</strong>: Hiển thị box zoom image khi hover vào ảnh sản phẩm</p>
+								<p><strong>Enable Full Screen</strong>: Hiển thị box full screen image khi click vào ảnh sản phẩm</p>
+							</div>
+						</div>
+
+						<button class="btn btn-secondary btn-config" type="button" data-toggle="collapse" data-target="#product-page-infoproduct">
+							<span>Info Product</span>
+							<i class="fa fa-arrows-v"></i>
+						</button>
+						<div class="collapse collapse-config" id="product-page-infoproduct">
+							<div class="collapse-config-content">
+								<p><strong>Display Countdown</strong>:Display countdown timer if products are set up special price, special price from date and special price to date.</p>
+								<p><strong>Display Social Button</strong>: Hiển thị social button để bạn dễ dàng chia sẻ lên mạng xã hội</p>
+								<p><strong>Title</strong>: Title của mục social button</p>
+								<p><strong>Social Html</strong>: Mã HTML của social button</p>
+								<p><strong>Social Script</strong>: Mã Script của social button</p>
+								<hr/>
+								<p><strong>Cách lấy mã HTML:</strong></p>
+								<ol>
+									<li>Goto <a target="_blank" href="https://www.addthis.com">https://www.addthis.com</a></li>
+									<li>Đăng ký tài khoản hoặc đăng nhập nếu bạn đã có tài khoản</li>
+									<li><strong>Select a Tool</strong>: Chọn một dạng social mà bạn thích (ví dụ: Share Buttons)
+										<div class="view-image">
+											<p><a class="btn btn-danger btn-view-image" href="javascript:void(0);">View Image</a></p>
+											<img src="assets/images/design/tool-addthis.png" alt="Addthis Tools" />
+										</div>
+									</li>
+
+									<li>Chọn định dạng cho share button(ví dụ: Inline). Ở phần này bạn có thể cấu hình cho social buttons. Rồi click Activate Tool</li>
+									<li>Tại tab: <strong>An HTML Website</strong>, kéo xuống bên dưới phần Setup Inline Tools, copy đoạn mã vào param Social Html</li>
+								</ol>
+
+								<p><strong>Cách lấy mã Script:</strong></p>
+								<p>Tại tab: <strong>An HTML Website</strong> copy đoạn script vào param Social Script</p>
+								<div class="alert alert-success">
+									<i class="fa fa-lightbulb-o"></i> <strong>Tip</strong>: Bạn có thể sử dụng module free của addthis.<br>
+									Tại bước thứ 5 trong <strong>Cách lấy mã HTML:</strong> Bạn sang tab Magento và làm theo hướng dẫn.<br>
+									Chú ý: Nếu bạn sử dụng module này, bạn hãy set <strong>Display Social Button</strong>: No để tránh xung đột.
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				

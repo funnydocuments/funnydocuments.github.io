@@ -81,6 +81,18 @@ img{
 	background-color: #eee;
 }
 
+.alert-success{
+	padding-left: 45px;
+	min-height: 55px;
+}
+
+.alert-success i{
+	position: absolute;
+	top: 13px;
+	left: 18px;
+	font-size: 25px;
+}
+
 .tocify{
 	background-color: #f4f5f7;
 	width: 300px;
